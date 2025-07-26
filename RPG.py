@@ -260,8 +260,8 @@ while True:
         elif stage=='2':
             print('\n--고블린 숲--\n몬스터와 대전하여 승리시 경험치 10을 얻습니다.')
             
-            monster_slime1=random.choice(list(monster_slime))
-            print(f"{monster_slime1}이 등장했다! {monster_slime1}  hp:{monster_slime[monster_slime1]['hp']}, 공격력:{monster_slime[monster_slime1]['공격력']}") 
+            monster_goblin1=random.choice(list(monster_goblin))
+            print(f"{monster_goblin1}이 등장했다! {monster_goblin1}  hp:{monster_goblin[monster_goblin1]['hp']}, 공격력:{monster_goblin[monster_goblin1]['공격력']}") 
             print(f'전투를 시작합니다.')
 
             i=0
@@ -270,7 +270,7 @@ while True:
               
                 print(f'\n{i}번째 전투')
 
-                if  monster_slime[monster_slime1]['hp']<=0:
+                if  monster_slime[monster_goblin1]['hp']<=0:
                     경험치+=10
                     print(f'\n전투에서 승리하였습니다.\n경험치가 쌓였습니다. 현재 경험치:{경험치}' )
                     print('메인 화면으로 이동합니다.')
@@ -279,20 +279,20 @@ while True:
                     print('전투에서 패배하였습니다. 자동으로 메인화면으로 이동합니다.')
                     break
                 else:
-                    print(f'\n현재 {monster_slime1} \nhp:{monster_slime[monster_slime1]['hp']}, 공격력:{monster_slime[monster_slime1]['공격력']}')
+                    print(f'\n현재 {monster_goblin1} \nhp:{monster_slime[monster_goblin1]['hp']}, 공격력:{monster_goblin[monster_goblin1]['공격력']}')
                     print(f'현재 나\nhp:{hp}, 공격력:{power}')
                     print('\n전투를 계속 하시겠습니까?\n1. 네\n2. 아니요')
                     fight=input("번호:")
                     if fight=='1':
-                        if monster_slime[monster_slime1]['공격력']-power>0:
-                            print(f'\n현재 {monster_slime1} \nhp:{monster_slime[monster_slime1]['hp']}, 공격력:{monster_slime[monster_slime1]['공격력']}')
-                            print(f'{monster_slime1})의 공격력이 나의 공격력보다 {monster_slime[monster_slime1]['공격력']-power}만큼 큽니다. 나는 {monster_slime[monster_slime1]['공격력']-power}만큼 데미지를 입습니다.')
-                            hp-=monster_slime[monster_slime1]['공격력']-power
+                        if monster_goblin[monster_goblin1]['공격력']-power>0:
+                            print(f'\n현재 {monster_goblin1} \nhp:{monster_goblin[monster_goblin1]['hp']}, 공격력:{monster_goblin[monster_goblin1]['공격력']}')
+                            print(f'{monster_goblin1})의 공격력이 나의 공격력보다 {monster_goblin[monster_goblin1]['공격력']-power}만큼 큽니다. 나는 {monster_goblin[monster_goblin1]['공격력']-power}만큼 데미지를 입습니다.')
+                            hp-=monster_goblin[monster_goblin1]['공격력']-power
                             continue
-                        elif monster_slime[monster_slime1]['공격력']-power<=0:
-                            print(f'\n현재 {monster_slime1} \nhp:{monster_slime[monster_slime1]['hp']}, 공격력:{monster_slime[monster_slime1]['공격력']}')
-                            print(f'{monster_slime1}의 공격력이 나의 공격력보다 {power-monster_slime[monster_slime1]['공격력']}만큼 작습니다. 몬스터는 {power-monster_slime[monster_slime1]['공격력']}만큼 데미지를 입습니다.')
-                            monster_slime[monster_slime1]['hp']-=power-monster_slime[monster_slime1]['공격력']
+                        elif monster_goblin[monster_goblin1]['공격력']-power<=0:
+                            print(f'\n현재 {monster_goblin1} \nhp:{monster_goblin[monster_goblin1]['hp']}, 공격력:{monster_goblin[monster_goblin1]['공격력']}')
+                            print(f'{monster_goblin1}의 공격력이 나의 공격력보다 {power-monster_goblin[monster_goblin1]['공격력']}만큼 작습니다. 몬스터는 {power-monster_goblin[monster_goblin1]['공격력']}만큼 데미지를 입습니다.')
+                            monster_slime[monster_goblin1]['hp']-=power-monster_goblin[monster_goblin1]['공격력']
                             continue
                     elif fight=='2':
                         print('\n전투를 종료합니다.')
@@ -304,8 +304,8 @@ while True:
         elif stage=='3':
             print('\n--오크 요새--\n몬스터와 대전하여 승리시 경험치 10을 얻습니다.')
             
-            monster_slime1=random.choice(list(monster_slime))
-            print(f"{monster_slime1}이 등장했다! {monster_slime1}  hp:{monster_slime[monster_slime1]['hp']}, 공격력:{monster_slime[monster_slime1]['공격력']}") 
+            monster_ock1=random.choice(list(monster_ock))
+            print(f"{monster_ock1}이 등장했다! {monster_ock1}  hp:{monster_ock[monster_ock1]['hp']}, 공격력:{monster_ock[monster_ock1]['공격력']}") 
             print(f'전투를 시작합니다.')
 
             i=0
@@ -314,7 +314,7 @@ while True:
               
                 print(f'\n{i}번째 전투')
 
-                if  monster_slime[monster_slime1]['hp']<=0:
+                if  monster_ock[monster_ock1]['hp']<=0:
                     경험치+=10
                     print(f'\n전투에서 승리하였습니다.\n경험치가 쌓였습니다. 현재 경험치:{경험치}' )
                     print('메인 화면으로 이동합니다.')
@@ -323,20 +323,20 @@ while True:
                     print('전투에서 패배하였습니다. 자동으로 메인화면으로 이동합니다.')
                     break
                 else:
-                    print(f'\n현재 {monster_slime1} \nhp:{monster_slime[monster_slime1]['hp']}, 공격력:{monster_slime[monster_slime1]['공격력']}')
+                    print(f'\n현재 {monster_ock1} \nhp:{monster_ock[monster_ock1]['hp']}, 공격력:{monster_ock[monster_ock1]['공격력']}')
                     print(f'현재 나\nhp:{hp}, 공격력:{power}')
                     print('\n전투를 계속 하시겠습니까?\n1. 네\n2. 아니요')
                     fight=input("번호:")
                     if fight=='1':
-                        if monster_slime[monster_slime1]['공격력']-power>0:
-                            print(f'\n현재 {monster_slime1} \nhp:{monster_slime[monster_slime1]['hp']}, 공격력:{monster_slime[monster_slime1]['공격력']}')
-                            print(f'{monster_slime1})의 공격력이 나의 공격력보다 {monster_slime[monster_slime1]['공격력']-power}만큼 큽니다. 나는 {monster_slime[monster_slime1]['공격력']-power}만큼 데미지를 입습니다.')
-                            hp-=monster_slime[monster_slime1]['공격력']-power
+                        if monster_ock[monster_ock1]['공격력']-power>0:
+                            print(f'\n현재 {monster_ock1} \nhp:{monster_ock[monster_ock1]['hp']}, 공격력:{monster_ock[monster_ock1]['공격력']}')
+                            print(f'{monster_ock1})의 공격력이 나의 공격력보다 {monster_ock[monster_ock1]['공격력']-power}만큼 큽니다. 나는 {monster_ock[monster_ock1]['공격력']-power}만큼 데미지를 입습니다.')
+                            hp-=monster_ock[monster_ock1]['공격력']-power
                             continue
-                        elif monster_slime[monster_slime1]['공격력']-power<=0:
-                            print(f'\n현재 {monster_slime1} \nhp:{monster_slime[monster_slime1]['hp']}, 공격력:{monster_slime[monster_slime1]['공격력']}')
-                            print(f'{monster_slime1}의 공격력이 나의 공격력보다 {power-monster_slime[monster_slime1]['공격력']}만큼 작습니다. 몬스터는 {power-monster_slime[monster_slime1]['공격력']}만큼 데미지를 입습니다.')
-                            monster_slime[monster_slime1]['hp']-=power-monster_slime[monster_slime1]['공격력']
+                        elif monster_ock[monster_ock1]['공격력']-power<=0:
+                            print(f'\n현재 {monster_ock1} \nhp:{monster_ock[monster_ock1]['hp']}, 공격력:{monster_ock[monster_ock1]['공격력']}')
+                            print(f'{monster_ock1}의 공격력이 나의 공격력보다 {power-monster_ock[monster_ock1]['공격력']}만큼 작습니다. 몬스터는 {power-monster_ock[monster_ock1]['공격력']}만큼 데미지를 입습니다.')
+                            monster_ock[monster_ock1]['hp']-=power-monster_ock[monster_ock1]['공격력']
                             continue
                     elif fight=='2':
                         print('\n전투를 종료합니다.')
