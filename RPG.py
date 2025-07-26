@@ -10,11 +10,11 @@ print('\n\n')
 
 
 namae
-power=2  #힘=power
+power=2  
 hp=200
 경험치=0
 invent=[]
-money=20000      #소지금 수정하기
+money=200   
 buki=[]
 bougyo=[]
 
@@ -201,11 +201,10 @@ while True:
             else:
                 print('번호를 제대로 입력해 주세요.')
                 continue
-                
+       #3끝끝         
                     
                 
-#확인 해보고 4로 넘어가기 아뇨 그냥 넘어갈게요... 여긴 무조건 try 구문을 써야 하는 부분 인듯함.
-            #그 조건 너무 다양한 폼으로 있어서 그러니 일단 넘어감
+
 
     elif main==4:
         print('\n던전입니다. 탐험할 던전을 선택해 주세요.')
@@ -354,7 +353,6 @@ while True:
             print('번호를 다시 입력해주세요.')
             continue
                     
-                    #사실 뒤로가기에사 던전 선택이 아닌 아예 메인메뉴로 나가기는 해
 
     elif main==5:
         print('현재 상태를 확인합니다.')
